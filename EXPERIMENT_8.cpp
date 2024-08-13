@@ -35,7 +35,7 @@ public:
         if (elements.empty()) {
             throw std::runtime_error("Vector is empty");
         }
-        return static_cast<double>(std::accumulate(elements.begin(), elements.end(), 0)) / elements.size();
+        return static_cast<double>(std::accumulate(elements.begin(), elements.end(),0)) / elements.size();
     }
 };
 
