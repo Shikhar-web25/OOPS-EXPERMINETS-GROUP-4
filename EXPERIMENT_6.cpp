@@ -40,7 +40,7 @@ public:
 
     date(int d, int m, int y) : day(d), month(m), year(y) {
         if (d > daysInMonth(m, y) || d < 1 || m > 12 || m < 1 || y < 1) {
-            throw std::invalid_argument("Invalid date");
+            throw std::invalid_argument("Invalid Date");
         }
     }
 
